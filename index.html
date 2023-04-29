@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>API's en HTML</title>
+</head>
+<body>
+    <img src="https://static.wixstatic.com/media/b905a4_02d6c136281744c692e63c5a69a84aba~mv2.png/v1/fill/w_1000,h_563,al_c,q_90,usm_0.66_1.00_0.01/b905a4_02d6c136281744c692e63c5a69a84aba~mv2.png" alt="icono-netflix">
+    <h3>Sube tu vídeo</h3>
+    <div id="div-video">
+        <input type="file" name="file" id="file" accept="video/*">
+        <output id="outputVideo"></output>
+    </div>
+
+    <div id="buttons">
+        <button class="button-css" role="button" onclick="document.getElementById('video').play();" id="play" style="visibility: hidden">REPRODUCIR</button>
+        <button class="button-css" role="button" onclick="document.getElementById('video').pause();"  id="pause" style="visibility: hidden">PAUSAR</button>
+        <button class="button-css" role="button" onclick="document.getElementById('video').volume += 0.1;"  id="volumeUp"  style="visibility: hidden">SUBIR VOLUMEN</button>
+        <button class="button-css" role="button" onclick="document.getElementById('video').volume -= 0.1;"  id="volumeDown" style="visibility: hidden">BAJAR VOLUMEN</button>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
